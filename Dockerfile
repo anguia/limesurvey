@@ -4,7 +4,7 @@ apt-get upgrade -q -y ;\
 apt-get install -q -y curl php5-gd php5-ldap php5-imap; apt-get clean ; \
 php5enmod imap
 RUN rm -rf /app
-ADD limesurvey250plus-build160307.tar.bz2 /
+ADD limesurvey.tar.bz2 /
 RUN mv limesurvey app; \
 mkdir -p /uploadstruct; \
 chown -R www-data:www-data /app
