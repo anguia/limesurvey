@@ -11,7 +11,7 @@ chown -R www-data:www-data /app
 RUN cp -r /app/upload/* /uploadstruct ; \
 chown -R www-data:www-data /uploadstruct
 RUN chown www-data:www-data /var/lib/php5
-ADD apache_default /etc/apache2/sites-available/000-default.conf
+#ADD apache_default /etc/apache2/sites-available/000-default.conf
 ADD start.sh /
 RUN chmod +x /start.sh
 VOLUME /app/upload
